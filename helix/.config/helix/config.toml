@@ -1,0 +1,42 @@
+# -- Theme -- #
+theme = "tokyonight_moon"
+
+# -- Editor-related -- #
+[editor]
+color-modes = true
+line-number = "relative"
+cursorline = true
+scrolloff = 8
+auto-pairs = true
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.indent-guides]
+render = true
+character = "│"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+# -- Remaps -- #
+[keys.normal]
+
+# Movement
+"C-u" = ["page_cursor_half_up", "align_view_center"]
+"C-f" = ["page_cursor_up", "align_view_center"]
+"C-d" = ["page_cursor_half_down", "align_view_center"]
+"C-b" = ["page_cursor_down", "align_view_center"]
+
+# Side-hotkeys
+"D" = ["select_mode", "goto_line_end", "delete_selection"]
+
+[keys.normal.space]
+"w" = ":w"
+"q" = ":q"
+"Q" = ":q!"
+"r" = ":run-shell-command ~/.config/helix/run-file.sh '%{buffer_name}'"

@@ -1,0 +1,82 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 0,
+  "modules-left": ["custom/activities", "wlr/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio", "network", "battery", "custom/power"],
+
+  "custom/activities": {
+    "format": "Activities",
+    "on-click": "wofi --show drun",
+    "tooltip": false
+  },
+
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "active": "●",
+      "default": "○"
+    },
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    }
+  },
+
+  "clock": {
+    "format": "{:%a %d de %b  %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "locale": "pt_BR.UTF-8"
+  },
+
+  "tray": {
+    "spacing": 10,
+    "icon-size": 16
+  },
+
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pavucontrol",
+    "tooltip-format": "{volume}%"
+  },
+
+  "network": {
+    "format-wifi": "󰤨",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰤭",
+    "tooltip-format": "{essid} ({signalStrength}%)",
+    "on-click": "nm-connection-editor"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}",
+    "format-charging": "󰂄",
+    "format-plugged": "󰚥",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "tooltip-format": "{capacity}%"
+  },
+
+  "custom/power": {
+    "format": "⏻ ",
+    "on-click": "wlogout",
+    "tooltip": false
+  }
+}

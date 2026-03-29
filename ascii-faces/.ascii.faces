@@ -1,0 +1,49 @@
+# Classic ASCII/TTY emoticons
+
+# Confused / Shocked
+ascii_face_confused="o_O"
+ascii_face_weird="O_o"
+ascii_face_blink="O_O"
+ascii_face_huh="?_?"
+
+# Blank / Indifferent
+ascii_face_blank="._."
+ascii_face_meh="-_-"
+ascii_face_shrug="¯\\_(ツ)_/¯"
+
+# Happy / Excited
+ascii_face_happy="^_^"
+ascii_face_grin=":D"
+ascii_face_smile=":)"
+ascii_face_lenny="( ͡° ͜ʖ ͡°)"
+ascii_face_party="\\o/"
+
+# Sad / Crying
+ascii_face_crying=";_;"
+ascii_face_sad="T_T"
+ascii_face_frown=":("
+
+# Dead / Defeated
+ascii_face_dead="X_X"
+ascii_face_exhausted="-.-"
+
+# Angry / Frustrated
+ascii_face_angry=">_<"
+ascii_face_rage="(╯°□°）╯︵ ┻━┻"
+ascii_face_grumble="ಠ_ಠ"
+
+# Playful / Mischief
+ascii_face_wink=";)"
+ascii_face_tease=":P"
+ascii_face_evil=">:)"
+
+# Misc / Action
+ascii_face_dab="\\o/"
+ascii_face_wave="o/"
+ascii_face_facepalm="(-_-)"
+ascii_face_sweat="(-_-')"
+
+# Arms / Action variants
+ascii_face_pointing="<o_o<"
+ascii_face_run="o_o\\"
+ascii_face_fight="(ง'̀-'́)ง"

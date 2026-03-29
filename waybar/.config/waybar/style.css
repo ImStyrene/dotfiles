@@ -1,0 +1,119 @@
+* {
+  font-family: "Cantarell", "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* Left side - Activities and Workspaces */
+#custom-activities {
+  padding: 0 15px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#custom-activities:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#workspaces {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+#workspaces button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#workspaces button.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Center - Clock */
+#clock {
+  padding: 0 15px;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Right side - System indicators */
+#tray,
+#pulseaudio,
+#network,
+#battery,
+#custom-power {
+  padding: 0 8px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#tray {
+  padding-right: 12px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
+
+#pulseaudio:hover,
+#network:hover,
+#battery:hover,
+#custom-power:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Battery states */
+#battery.charging {
+  color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+  color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+  color: #f38ba8;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  to {
+    color: #1e1e1e;
+  }
+}
+
+/* Tooltips */
+tooltip {
+  background-color: #2e2e2e;
+  border: 1px solid #3e3e3e;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+tooltip label {
+  color: #ffffff;
+}

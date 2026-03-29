@@ -1,0 +1,124 @@
+# JavaScript
+[[language]]
+name = "javascript"
+indent = { tab-width = 2, unit = "  " }
+
+# TypeScript
+[[language]]
+name = "typescript"
+indent = { tab-width = 2, unit = "  " }
+
+# TSX
+[[language]]
+name = "tsx"
+indent = { tab-width = 2, unit = "  " }
+
+# JSX
+[[language]]
+name = "jsx"
+indent = { tab-width = 2, unit = "  " }
+
+# JSON
+[[language]]
+name = "json"
+indent = { tab-width = 2, unit = "  " }
+
+# HTML
+[[language]]
+name = "html"
+indent = { tab-width = 2, unit = "  " }
+
+# CSS
+[[language]]
+name = "css"
+indent = { tab-width = 2, unit = "  " }
+
+# SCSS
+[[language]]
+name = "scss"
+indent = { tab-width = 2, unit = "  " }
+
+# YAML
+[[language]]
+name = "yaml"
+indent = { tab-width = 2, unit = "  " }
+
+# TOML
+[[language]]
+name = "toml"
+indent = { tab-width = 2, unit = "  " }
+
+# XML
+[[language]]
+name = "xml"
+indent = { tab-width = 2, unit = "  " }
+
+# Vue
+[[language]]
+name = "vue"
+indent = { tab-width = 2, unit = "  " }
+
+# Svelte
+[[language]]
+name = "svelte"
+indent = { tab-width = 2, unit = "  " }
+
+# Rust
+[[language]]
+name = "rust"
+indent = { tab-width = 2, unit = "  " }
+
+# Python
+[[language]]
+name = "python"
+indent = { tab-width = 2, unit = "  " }
+
+# C
+[[language]]
+name = "c"
+indent = { tab-width = 2, unit = "  " }
+
+# C++
+[[language]]
+name = "cpp"
+indent = { tab-width = 2, unit = "  " }
+
+# Go
+[[language]]
+name = "go"
+indent = { tab-width = 2, unit = "  " }
+
+# Java
+[[language]]
+name = "java"
+indent = { tab-width = 2, unit = "  " }
+
+# PHP
+[[language]]
+name = "php"
+indent = { tab-width = 2, unit = "  " }
+
+# Ruby
+[[language]]
+name = "ruby"
+indent = { tab-width = 2, unit = "  " }
+
+# Perl
+[[language]]
+name = "perl"
+indent = { tab-width = 2, unit = "  " }
+
+# Shell/Bash
+[[language]]
+name = "bash"
+indent = { tab-width = 2, unit = "  " }
+
+# Markdown
+[[language]]
+name = "markdown"
+indent = { tab-width = 2, unit = "  " }
+
+# Nix
+[[language]]
+name = "nix"
+indent = { tab-width = 2, unit = "  " }

@@ -1,0 +1,12 @@
+# Mode
+show=drun
+
+# Appearance
+width=30%
+height=40%
+location=center
+hide_scroll=true
+
+# Behavior
+prompt=
+insensitive=true

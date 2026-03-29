@@ -1,0 +1,71 @@
+* {
+  background-image: none;
+  box-shadow: none;
+  font-family: "Cantarell", "Noto Sans", sans-serif;
+}
+
+window {
+  background-color: rgba(30, 30, 30, 0.95);
+}
+
+button {
+  color: #e0e0e0;
+  background-color: #2a2a2a;
+  border: 2px solid #404040;
+  border-radius: 12px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  min-width: 150px;
+  min-height: 150px;
+  transition: all 0.3s ease;
+}
+
+button:focus,
+button:active,
+button:hover {
+  background-color: #3a3a3a;
+  border: 2px solid #606060;
+  outline-style: none;
+}
+
+button:focus {
+  border: 2px solid #808080;
+}
+
+#lock {
+  background-image: image(url("./icons/lock.png"), url("~/.nix-profile/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+  background-image: image(url("./icons/logout.png"), url("~/.nix-profile/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+  background-image: image(url("./icons/suspend.png"), url("~/.nix-profile/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+  background-image: image(url("./icons/hibernate.png"), url("~/.nix-profile/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+  background-image: image(url("./icons/shutdown.png"), url("~/.nix-profile/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+  background-image: image(url("./icons/reboot.png"), url("~/.nix-profile/share/wlogout/icons/reboot.png"));
+}
+
+/* Button labels */
+button label {
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+button:hover label {
+  color: #ffffff;
+}
