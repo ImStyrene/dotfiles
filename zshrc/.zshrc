@@ -1,6 +1,6 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" && -s "${ZDOTDIR:-$HOME}/.p10k.zsh" ]]; then
+  # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # =================
 # ZSH CONFIGURATION
@@ -29,12 +29,6 @@ export PATH="$HOME/.local/opt/go/bin:$PATH"
 # Zinit home directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-# Download Zinit if not installed
-if [ ! -d "$ZINIT_HOME" ]; then
-  mkdir -p "$(dirname $ZINIT_HOME)"
-  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-fi
-
 # Load Zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
@@ -43,7 +37,6 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-zinit light romkatv/powerlevel10k
 
 # Load completions
 autoload -U compinit && compinit
@@ -60,9 +53,6 @@ eval "$(fzf --zsh)"
 # COMPLETION & STYLING
 # ====================
 
-# Case-insensitive completion
-# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
 # Colorized completion menu
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
@@ -77,9 +67,12 @@ alias ls="ls --color"
 alias xvim="~/.nix-profile/bin/nvim"
 alias xvim-update="nix profile upgrade nixvim/.config/nixvim"
 alias nixos-generation-list="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system/"
-alias arkenfox-update="~/.config/mozilla/firefox/mbz0g7ku.default/updater.sh"
+
+# =============
+# AUTO-COMMANDS
+# =============
+
+fastfetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-fpath+=~/.zfunc; autoload -Uz compinit; compinit
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
