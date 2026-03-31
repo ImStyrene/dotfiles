@@ -54,6 +54,7 @@ PACKAGES=(
   "wofi:wofi:Wayland app launcher:wm"
   "zshrc:zshrc:Zsh configuration:shell"
   "mpv:mpv:Lightweight media player:media"
+  "fastfetch:fastfetch:A popular Neofetch successor:hardware"
 )
 
 # Category colors
@@ -65,6 +66,7 @@ cat_color() {
     dev)      echo "$BYELLOW"  ;;
     wm)       echo "$BBLUE"    ;;
     media)    echo "$BRED"     ;;
+    hardware) echo "$BWHITE"   ;;
     *)        echo "$BWHITE"   ;;
   esac
 }
@@ -77,6 +79,7 @@ cat_icon() {
     dev)      echo "⌥" ;;
     wm)       echo "⬢" ;;
     media)    echo "▶" ;;
+    hardware) echo " " ;;
     *)        echo "•" ;;
   esac
 }
