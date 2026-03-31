@@ -3,9 +3,7 @@ local config = wezterm.config_builder();
 
 -- # STARTUP # --
 config.default_prog = {
-  "/run/current-system/sw/bin/zsh";
-  "-c";
-  "fastfetch; source ~/.zshrc; exec zsh";
+  "/run/current-system/sw/bin/zsh"
 };
 
 -- # FONT # --
