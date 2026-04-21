@@ -1,5 +1,5 @@
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" && -s "${ZDOTDIR:-$HOME}/.p10k.zsh" ]]; then
-  # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
 # =================
@@ -25,6 +25,8 @@ export PATH="$HOME/.local/opt/go/bin:$PATH"
 # ======================
 # PLUGIN MANAGER (ZINIT)
 # ======================
+
+# Remove the line below and remove the ML-COMMENT part if you want to use Zinit
 
 # Zinit home directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -67,12 +69,25 @@ alias ls="ls --color"
 alias xvim="~/.nix-profile/bin/nvim"
 alias xvim-update="nix profile upgrade nixvim/.config/nixvim"
 alias nixos-generation-list="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system/"
+alias sober-ro="chmod 444 ~/sober.conf.json"
+alias sober-rw="chmod 644 ~/sober.conf.json"
+
+# =========
+# FUNCTIONS
+# =========
+
+# FFF
+fm() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
 
 # =============
 # AUTO-COMMANDS
 # =============
 
-fastfetch
+# FastFetch
+# fastfetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
